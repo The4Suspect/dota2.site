@@ -1,0 +1,55 @@
+.main_background{
+    background-image: url(dota2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+   border: 3px;
+   border-style: solid;
+   border-color:#bfc5c7 ;
+   width: 1100px;
+   height: 100%;
+   background-color:#f7fbfc;
+}
+.main_txt_back1{
+    border: 3px;
+    border-style: solid;
+    border-color: #b7d5ec;
+    width: 1100px;
+    height: 100%;
+    background-color:#d6e6f2;
+}
+.main_txt_back2{
+    border: 3pt;
+    border-style: solid;
+    border-color:#8cadc2 ;
+    width: 1100px;
+    height: 100%;
+    background-color:#b9d7ea ;
+}
+.main_txt_back3{
+    border: 3px;
+    border-style: solid;
+    border-color:#587ca7;
+    width: 1100px;
+    height: 100%;
+    background-color:#749ecd;
+}
+.menu_item_Dota2_Main:hover {
+    color: #ff0000;
+}
+.menu_item_First:hover {
+    color: #e100ff;
+}
+.menu_item_Second:hover {
+    color: #eeff00;
+}
+.menu_item_Third:hover {
+    color: #ff9100;
+}
+.menu_item_Fourth:hover {
+    color: #ae00ff;
+}
+.menu_item_Fifth:hover {
+    color: #ff00d4;
+}
