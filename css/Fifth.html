@@ -20,7 +20,7 @@
                 </tr>
             </table>
         </div>
-          <div class="main_txt_back1"><h2><b>"Старый Бог"</b></h2>
+          <div class="main_txt_back1"><h2><b>"Старий Бог"</b></h2>
             <div><p>«Старий Бог» - це не якийсь вигаданий персонаж, а Владислав Левенець - реальний український стример, який транслює свої ігри в Dota 2 на Twitch.</p>
           </div>
           <div class="main_txt_back2">
@@ -30,8 +30,32 @@
                 </div>
                 <div class="main_txt_back3">
                  <p>Вирізані моменти від команди Team Spirit</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4ctMJbW64zQ?si=gNax5opDvW0XVefc&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="nat_vid" width="560" height="315" src="https://www.youtube.com/embed/4ctMJbW64zQ?si=gNax5opDvW0XVefc&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
         </div>
+
+        <script>
+            let natura = 0;
+
+            function natura_activate() {
+                document.getElementById("nat_vid").setAttribute("src", "https://www.youtube.com/embed/Z7GVPbG0pfQ?si=x399g4GMHrPVutCd");
+            }
+
+            function natura_reverse() {
+                document.getElementById("nat_vid").setAttribute("src", "https://www.youtube.com/embed/hOq21jckd1k?si=aLLyxHoR8eTG6w3a");
+            }
+
+            document.addEventListener('keydown', function(event) {
+                if (event.code === 'KeyB') {
+                    if (natura === 0) {
+                        natura_activate();
+                        natura += 1;
+                    } else if (natura === 1) {
+                        natura_reverse();
+                        natura -= 1;
+                    }
+                }
+            });
+        </script>
    </body>
 </html>
