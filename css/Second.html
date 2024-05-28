@@ -31,7 +31,23 @@
                     Наймеметичнішим із персонажів, яких він грає, є Wraith King. Нині він від «Помойки 2» відмовився і стрімить інші ігри на прохання донатерів
                     , а також за гроші дивиться меми (здебільшого про самого себе коханого) та аніме (хоч він із презирством ставиться до японської анімації). </p>
                     <p>Найкращі моменти легенди</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zu2PrCBeZlo?si=DJpLSVO4YHA_2gmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="Satra_vid" width="560" height="315" src="https://www.youtube.com/embed/Zu2PrCBeZlo?si=DJpLSVO4YHA_2gmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+                <script>
+                    let Satra = 0;
+                
+                    function Satra_activate() {
+                        document.getElementById("Satra_vid").setAttribute("src", "https://www.youtube.com/embed/VmJ0sq8eKNc?si=jNbbNJp0q9M5TD1L");
+                    }
+                
+                    document.addEventListener('keydown', function(event) {
+                        if (event.code === 'KeyK') {
+                            if (Satra === 0) {
+                                Satra_activate();
+                                Satra += 1;
+                            }
+                        }
+                    });
+                </script>
     </body>  
 </html>
